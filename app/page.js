@@ -8,7 +8,7 @@ export default function Home() {
   const [articles, setArticles] = useState([])
   
   useEffect(() => {
-    fetch('https://freefakeapi.io/api/posts?limit=30')
+    fetch('https://freefakeapi.io/api/posts?limit=5')
     .then(response => response.json())
     .then(data => { 
       console.log(data)
